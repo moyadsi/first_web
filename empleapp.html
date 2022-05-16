@@ -8,5 +8,29 @@
 </head>
 <body>
     <h1>EmpleApp</h1>
+    <p>Creamos y evaluamos tu hoja de vida</p>
+    
+      <img src="./Entregables/Web/1_Header/img_1.png">
+      <h2 id="info1">¿Quienes somos?</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nulla cupiditate quam voluptatibus, dolorum, saepe similique magnam tempora impedit ea voluptatem soluta ab ratione, provident nihil perferendis illo harum reiciendis.</p>
+      <h2 id="info2">Información 2</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nulla cupiditate quam voluptatibus, dolorum, saepe similique magnam tempora impedit ea voluptatem soluta ab ratione, provident nihil perferendis illo harum reiciendis.</p>
+      <h3>Links de interés:</h3>
+      <h4>
+        <a href="https://www.alkosto.com/celulares/telefonos-celulares/c/BI_101_ALKOS">Alkosto</a>
+      </h4>
+  
+      <script>
+        let visitasActuales = localStorage.getItem("visitas");
+        if (visitasActuales){
+          let aumento = parseInt(visitasActuales) + 1;
+          document.getElementById("visitas").innerHTML = aumento;
+          localStorage.setItem("visitas", aumento);
+        }else{
+          localStorage.setItem("visitas", 1);
+          document.getElementById("visitas").innerHTML = 1;
+        }
+      </script>
+
 </body>
 </html>
