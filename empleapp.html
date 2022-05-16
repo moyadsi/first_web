@@ -10,27 +10,32 @@
     <h1>EmpleApp</h1>
     <p>Creamos y evaluamos tu hoja de vida</p>
     
-      <img src="./Entregables/Web/1_Header/img_1.png">
+      <img src="./Entregables/1_Header/img_1.png">
       <h2 id="info1">¿Quienes somos?</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nulla cupiditate quam voluptatibus, dolorum, saepe similique magnam tempora impedit ea voluptatem soluta ab ratione, provident nihil perferendis illo harum reiciendis.</p>
-      <h2 id="info2">Información 2</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nulla cupiditate quam voluptatibus, dolorum, saepe similique magnam tempora impedit ea voluptatem soluta ab ratione, provident nihil perferendis illo harum reiciendis.</p>
-      <h3>Links de interés:</h3>
-      <h4>
-        <a href="https://www.alkosto.com/celulares/telefonos-celulares/c/BI_101_ALKOS">Alkosto</a>
-      </h4>
+      <p>EmpleApp es una empresa que Conecta perfiles potenciales de una manera rápida, ágil y efectiva, enfocando su metodología en las personas.
+        Potencializando el perfil laboral e incrementando la visibilidad ante los reclutadores/buscadores de empleo y facilita para las empresas la consecución de personal idóneo en menor tiempo.</p>
+      <h2 id="info2">¿Por qué Nosotros?</h2>
+
+    <ul> 
+        <li><h3>Identificamos</h3></li> 
+        <p>Nos importa lo que deseas para tu futuro, en una entrevista inicial entendemos las necesidades e inconvenientes que han surgido a lo largo del proceso de búsqueda de empleo.</p>   
+        <li><h3>Perfilamos</h3></li> 
+        <p>En un acompañamiento de 3 días encontramos habilidades y fortalezas del perfil y lo plasmamos en un documento digital potencializado.</p>
+        <li><h3>Conectamos</h3></li> 
+        <p>¡Pasamos a la acción! conociendo tu perfil y tus requerimientos continuamos conectando con las empresas a nivel nacional e internacional.</p>
+    </ul>    
+    
+    <h2 id="info2">Empresas aliadas</h2>
+    <a title="myf" href="https://www.marquezyfajardo.com" target="_blank">
+        <img src="./Entregables/5_Empresas/Marquez Y Fajardo.png" alt="myf" /></a>
+
+    <a title="sena" href="https://www.sena.edu.co/es-co/Paginas/default.aspx" target="_blank">
+        <img src="./Entregables/5_Empresas/Sena_o.png" alt="sena" /></a>
+
+      <br>
+      <h3>Mayor informacion: <a href="https://api.whatsapp.com/send?phone=573206848738&text=Hola%20Quiero%20Saber%20M%c3%a1s&source=&data=&app_absent=">whatsapp</a></h3>
   
-      <script>
-        let visitasActuales = localStorage.getItem("visitas");
-        if (visitasActuales){
-          let aumento = parseInt(visitasActuales) + 1;
-          document.getElementById("visitas").innerHTML = aumento;
-          localStorage.setItem("visitas", aumento);
-        }else{
-          localStorage.setItem("visitas", 1);
-          document.getElementById("visitas").innerHTML = 1;
-        }
-      </script>
+
 
 </body>
 </html>
